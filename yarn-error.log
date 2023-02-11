@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\kajal\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add prisma
+
+PATH: 
+  C:\Program Files\PowerShell\7;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\kajal\AppData\Local\Microsoft\WindowsApps;C:\Users\kajal\AppData\Local\GitHubDesktop\bin;C:\Users\kajal\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\heroku\bin;C:\Users\kajal\AppData\Local\Programs\Microsoft VS Code\bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "private": true,
+    "sideEffects": false,
+    "scripts": {
+      "build": "npm run build:css && remix build",
+      "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
+      "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
+      "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css"
+    },
+    "dependencies": {
+      "@remix-run/node": "^1.9.0",
+      "@remix-run/react": "^1.9.0",
+      "@remix-run/serve": "^1.9.0",
+      "isbot": "^3.6.5",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@remix-run/dev": "^1.9.0",
+      "@remix-run/eslint-config": "^1.9.0",
+      "@types/react": "^18.0.25",
+      "@types/react-dom": "^18.0.8",
+      "autoprefixer": "^10.4.13",
+      "concurrently": "^7.6.0",
+      "eslint": "^8.27.0",
+      "postcss": "^8.4.20",
+      "tailwindcss": "^3.2.4",
+      "typescript": "^4.8.4"
+    },
+    "engines": {
+      "node": ">=14"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
